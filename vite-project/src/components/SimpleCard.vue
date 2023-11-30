@@ -1,13 +1,10 @@
 <script>
 export default {
     name: "SimpleCard",
-
     props: {
         obj: "object"
 
     }
-
-
 }
 </script>
 
@@ -21,9 +18,6 @@ export default {
                 <p>{{ obj.city }}</p>
             </span>
             <a :href="obj.website_url">Sito web</a>
-
-
-
         </div>
     </div>
 </template>

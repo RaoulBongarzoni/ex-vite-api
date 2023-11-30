@@ -7,7 +7,6 @@ export default {
 
     components: {
         BreweryCard
-
     },
 
     data() {
@@ -27,18 +26,13 @@ export default {
                 this.store.breweries = result.data;
             });
         }
-
-
     }
-
-
 }
 
 </script>
 
 <template>
     <main>
-
         <BreweryCard v-for="card in store.breweries" :obj="card" />
     </main>
 </template>
