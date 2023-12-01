@@ -26,7 +26,7 @@ export default {
         getBrewery() /* aggiorno per ricercare */ {
             let path = this.store.apiUrl;
             if (this.store.searchText.length !== 0) {
-                path = `https://api.openbrewerydb.org/v1/breweries?by_country=scotland&by_postal=${parseInt(this.store.searchText)}&per_page=10`;
+                path = `https://api.openbrewerydb.org/v1/breweries?by_postal=${parseInt(this.store.searchText)}`;
                 console.log(path)
             }
 
@@ -48,7 +48,7 @@ export default {
 
 
         <BreweryCard v-for="card in store.breweries" :obj="card" />
-        <p v-if="store.breweries.length == 0">Non ho Trovato Nulla,
+        <p v-if="store.breweries.length == 0">Non ho Trovato Nulla
             inserisci un codice postale valido..</p>
     </main>
 </template>
