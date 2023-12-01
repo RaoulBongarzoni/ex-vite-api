@@ -23,7 +23,7 @@ export default {
   <div>
     <appTitle />
 
-    <!-- search -->
+
     <mainContent />
   </div>
 </template>
