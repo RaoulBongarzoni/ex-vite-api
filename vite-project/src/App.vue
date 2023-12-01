@@ -18,7 +18,12 @@ export default {
 
 <template>
   <div>
+
+  </div>
+  <div>
     <appTitle />
+
+    <!-- search -->
     <mainContent />
   </div>
 </template>
